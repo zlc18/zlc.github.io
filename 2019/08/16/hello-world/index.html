@@ -118,7 +118,7 @@ ga('send', 'pageview');
             </li>
         
             <li class="waves-block waves-effect">
-              <a href="https://www.ncu.edu.cn"  >
+              <a href="../../../../www.ncu.edu.cn"  >
                 <i class="icon icon-lg icon-link"></i>
                 家园工作室
               </a>
@@ -330,6 +330,30 @@ ga('send', 'pageview');
 
 
 
+
+    <!-- Valine Comments -->
+    <div class="comments vcomment" id="comments"></div>
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <script src="//unpkg.com/valine@latest/dist/Valine.min.js"></script>
+    <!-- Valine Comments script -->
+    <script>
+        var GUEST_INFO = ['nick','mail','link'];
+        var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+          return GUEST_INFO.indexOf(item) > -1
+        });
+        new Valine({
+            el: '#comments',
+            notify: 'true' == 'true',
+            verify: 'true' == 'true',
+            appId: "XC2pVSfHpABP5cVfMsXEODQz-gzGzoHsz",
+            appKey: "Vn3tPf9zTNsWysxSFUsWRcAw# your leancloud appKey",
+            avatar: "mm",
+            placeholder: "点击此处评论",
+            guest_info: guest_info.length == 0 ? GUEST_INFO : guest_info,
+            pageSize: "10"
+        })
+    </script>
+    <!-- Valine Comments end -->
 
 
 
