@@ -7,7 +7,7 @@ const ap = new APlayer({
             name: '陪你度过漫长岁月',
             artist: '陈奕迅',
             url: 'http://www.ytmp3.cn/down/33576.mp3',
-            cover: '/img/suiyueshentou.png',
+//          cover: '/img/suiyueshentou.png',
            
            
         },
